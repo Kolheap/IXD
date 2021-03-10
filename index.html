@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.typekit.net/kce3mzp.css">
+        <style>
+            
+            #mainContainer{
+                width: 768px;
+                height: 1024px;
+                background-color: #101010;
+                margin: auto;
+				margin-top: -10px;
+            }
+            #leftColumn{
+                width:25%;
+                height:100%;
+                float:left;
+                background-color: #1A1A1A;
+            }
+            #logoSpace{
+                width:100%;
+                padding-top: 100%;
+                background-color: #545454;
+                position: relative;
+                
+            }
+            #rightColumn{
+                width:75%;
+                height:100%;
+                margin-top: 12.5%;
+                float:left;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                grid-column-gap: 10px;
+                grid-row-gap: 44px;
+
+            }
+            h1{
+                position:  absolute;
+                font-family: Sofia Pro Light, sans-serif;
+                
+                top: 10%;
+                left: 0;
+                bottom: 50%;
+                right: 0;
+                text-align: center;
+                font-size: 40px;
+                color: white;
+            }
+            .gridItemBlank{
+                width: 192px;
+                height: 192px;
+                max-height: 192px;
+                background-color: white;
+                opacity: 10%;
+                position: relative;
+                flex: auto;
+                flex-grow: 0;
+                
+                
+            }
+            .gridItem{
+                width: 192px;
+                max-height: 192px;
+                background-color: white;
+                position: relative;
+                flex: auto;
+                flex-grow: 0;
+                
+            }
+            .gridItem:hover{
+                opacity:87%;
+            }
+			h2{
+				margin left:20px;
+				font-style: normal;
+				
+			}
+        </style>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="leftColumn">
+                <div id="logoSpace">
+                    <h1>Kolby Heap</h1>
+                </div>
+            </div>
+            <div id="rightColumn">
+                <div class="gridItem"><a href="PDF/project3.pdf" target="_blank"><img src="IMG/1x/Icon1.png" alt="ColorType" width="192" height="192"></a></div>
+                <div class="gridItem"><a href="PDF/project2.pdf" target="_blank"><img src="IMG/1x/Icon2.png" alt="Bottle Lid" width="192" height="192"></a></div>
+                <div class="gridItem"><a href="PDF/project1.pdf" target="_blank"><img src="IMG/1x/Icon3.png" width="Bottle Opener" height="192"></a></div>
+                <div class="gridItemBlank"></div>
+                <div class="gridItemBlank"></div>
+                <div class="gridItemBlank"></div>
+                
+                
+            </div>
+        </div>
+    </body>
+</html>
