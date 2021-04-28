@@ -1,0 +1,178 @@
+body {
+    background-color: #92c2b6;
+    margin: 0px;
+}
+#main{
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    margin-top: 8%;
+    position: relative;
+}
+
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #707070;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #707070;
+}
+#GoogleG1{
+    width: 240px;
+    height: 200px;
+    background-image: url("1x/TreeLeaves.png");
+    background-repeat: no-repeat;
+    transition: background-image .6s linear;
+    position: absolute;
+    top: 38px;
+    left: 30px;
+    
+    
+}
+#GoogleO1{
+    width: 96px;
+    height: 133px;
+    background: url("1x/Teacup.png") no-repeat;
+    position: absolute;
+    top: 110px;
+    left: 275px;
+}
+#teaCircle{
+    background: #74A55B;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 285px;
+    transform: scale(0.05);
+    opacity: 0%;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+    pointer-events: none;
+}
+#GoogleOG{
+    width: 214px;
+    height: 160px;
+    background: url("1x/Zen.png") no-repeat;
+    position: absolute;
+    top: 103px;
+    left: 385px;
+}
+#GoogleL1{
+    width: 29px;
+    height: 142px;
+    background: url("1x/Ikebana.png") no-repeat;
+    position: absolute;
+    top: 60px;
+    left: 620px;
+}
+#GoogleE1{
+    width: 98px;
+    height: 98px;
+    background-image:url(1x/KinHide.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 108px;
+    left: 670px;
+    transition: background-image .4s ease-in-out;
+}
+
+#ParaInit{
+    position: absolute;
+    top:340px;
+    transition: opacity .3s ease-in-out;
+}
+#ParaBons{
+    position: absolute;
+    top:340px;
+    opacity:0%;
+    transition: opacity .3s ease-in-out;
+}
+#ParaHagi{
+    position: absolute;
+    top:340px;
+    opacity:0%;
+    transition: opacity .3s ease-in-out;
+}
+#ParaZen{
+    position: absolute;
+    top:340px;
+    opacity:0%;
+    transition: opacity .3s ease-in-out;
+}
+#ParaIke{
+    position: absolute;
+    top:340px;
+    opacity:0%;
+    transition: opacity .3s ease-in-out;
+}
+#ParaKin{
+    position: absolute;
+    top:340px;
+    opacity:0%;
+    transition: opacity .3s ease-in-out;
+}
+#textBackground{
+    background-color: white;
+    position: absolute;
+    top:340px;
+    width:100%;
+    height:160px;
+}
+
+#GoogleG1:hover{
+    background-image: url("1x/TreeBase.png");
+    background-repeat: no-repeat;
+}
+#GoogleG1:hover ~ #ParaInit{
+    opacity: 0%;
+}
+#GoogleG1:hover ~ #ParaBons{
+    opacity: 100%;
+}
+
+#GoogleO1:hover ~ #teaCircle{
+    transform:scale(1);
+    opacity: 100%;
+}
+#GoogleO1:hover ~ #ParaInit{
+    opacity: 0%;
+}
+#GoogleO1:hover ~ #ParaHagi{
+    opacity: 100%;
+}
+
+
+#GoogleOG:hover ~ #ParaInit{
+    opacity: 0%;
+}
+#GoogleOG:hover ~ #ParaZen{
+    opacity: 100%;
+}
+
+
+#GoogleL1:hover ~ #ParaInit{
+    opacity: 0%;
+}
+#GoogleL1:hover ~ #ParaIke{
+    opacity: 100%;
+}
+
+#GoogleE1:hover{
+    background-image: url(1x/KinShow.png);
+    background-repeat:no-repeat;
+}
+#GoogleE1:hover ~ #ParaInit{
+    opacity: 0%;
+}
+#GoogleE1:hover ~ #ParaKin{
+    opacity: 100%;
+}
